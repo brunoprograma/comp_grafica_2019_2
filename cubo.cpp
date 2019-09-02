@@ -55,6 +55,14 @@ int main() {
 			glVertex3f(x1, y1, 0.f);
 			glVertex3f(x1+0.2, y1+0.2, 0.f);
 
+			// lado esq tras
+			glVertex3f(x1+0.2, y1+0.2, 0.f);
+			glVertex3f(x1+0.2, y1-0.2, 0.f);
+
+			// baixo tras
+			glVertex3f(x1+0.2, y1-0.2, 0.f);
+			glVertex3f(x1+0.6, y1-0.2, 0.f);
+
 			// dir
 			glVertex3f(x1+0.4, y1, 0.f);
 			glVertex3f(x1+0.4, y1-0.4, 0.f);
@@ -74,6 +82,10 @@ int main() {
 			// linha de baixo
 			glVertex3f(x1, y1-0.4, 0.f);
 			glVertex3f(x1+0.4, y1-0.4, 0.f);
+
+			// diag de tras
+			glVertex3f(x1, y1-0.4, 0.f);
+			glVertex3f(x1+0.2, y1-0.2, 0.f);
 
 			// diag de baixo
 			glVertex3f(x1+0.4, y1-0.4, 0.f);
